@@ -8,7 +8,12 @@ import java.io.File;
 
 public class ApachePdfBox {
 
-    private final static String DOCUMENT_TO_READ = "/home/ddok/Desktop/Pef2TextProcessing/samples/wordpress-pdf-invoice-plugin-sample.pdf";
+    /*
+     * IMPORTANT: THIS ONLY WORK FOR THIS SPECIFIC PDF CONTENT STRUCTURE
+     * ANOTHER PDF FILE WITH DIFFERENT CONTENT MAY CAUSE THIS PROGRAM TO CRASH
+     */
+
+    private final static String DOCUMENT_TO_READ = "./samples/wordpress-pdf-invoice-plugin-sample.pdf";
     //    private static final String emailRegex = "^[\\w!#$%&'*+/=?`{|}~^-]+(?:\\.[\\w!#$%&'*+/=?`{|}~^-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$";
     private static Enterprise enterprise;
 
