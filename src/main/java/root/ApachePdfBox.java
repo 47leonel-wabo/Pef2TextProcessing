@@ -30,6 +30,9 @@ public class ApachePdfBox {
             PDFTextStripper textStripper = new PDFTextStripper();
             String extractedText = textStripper.getText(document);
 
+            // close stream to document
+            document.close();
+
             // Processing
             extractInformationFromText(extractedText);
         } catch (Exception e) {
